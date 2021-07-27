@@ -1,0 +1,127 @@
+
+:root {
+    --font-size-1: 28px;
+    --font-size-2: 20px;
+    --font-size-3: 15px;
+    --padding-1: 10px;
+    --margin-1: 5px;
+    --colour-1: white;
+    --colour-2: rgb(34, 34, 34, 0.6);
+    --border: solid 1px rgb(53, 53, 53);
+    --font: 'Lato', sans-serif;
+  }
+  
+  body, html {
+    background-repeat: repeat;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: var(--font);
+    color: var(--colour-1);
+    font-size: var(--font-size-3);
+    background-color: black;
+    background-image: url("images/double-bubble-dark.png");
+    text-align: center;
+  }
+  
+  .container {
+    display: inline-block;
+    width:95%;
+    background: var(--colour-2);
+    border: var(--border);
+    color: var(--colour-1);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    z-index: 3;
+  }
+  
+  .container h1 {
+    padding: var(--padding-1);
+    font-size: var(--font-size-2);
+  }
+  
+  .container h3 {
+    padding: var(--padding-1);
+    font-size: var(--font-size-2);
+  }
+ 
+  input, select {
+    padding: var(--padding-1);
+    border-radius: 5px;
+    margin: var(--margin-1);
+    font-size: var(--font-size-3);
+  }
+
+  select {
+    cursor: pointer;
+  }
+  
+  #ir-header {
+    width: 58%;
+  }
+
+  #ir-category {
+    width: 20%;
+  }
+  
+  .ir-icon {
+    width:18px;
+    height: 18px;
+    margin-left: 5px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+  
+  #ing-name {
+    width: 45%;
+  }
+  
+  #ing-amount, #ing-measure {
+    width: 15%;
+  }
+  
+  #ing-method {
+    width: 78%;
+  }
+  
+  #ir-img-cont {
+    display: inline-block;
+    border: var(--border);
+    background: rgb(34, 34, 34);
+    border-radius: 5px;
+  }
+  
+  #ir-insert-button {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(0, 0, 0);
+    transition: 0.2s;
+    font-weight: 800;
+    background-color: rgb(39, 39, 39);
+    color: antiquewhite;
+    font-size: var(--font-size-4);
+  }
+  
+  #ir-insert-button:hover {
+    color: black;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .ir-icon {
+      width:15px;
+      height: 15px;
+    }
+    #ir-insert-button {
+        margin-top: 50px;
+      }
+  }

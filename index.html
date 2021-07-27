@@ -1,0 +1,33 @@
+<!-- LH2020 -->
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Dynamic Forms | Grocery List Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <br>
+    <h1>Dynamic Forms | Grocery List Example</h1>
+    <p>Allows for a dynamic number of input fields dependant on user preference</p>
+    <div class="container">   
+        <h3>List Name</h3>
+        <form id="insert-list" action="#" enctype="multipart/form-data" method="post">              
+            <input type="text" name="ir-header" id="ir-header" placeholder="The Title Of Your List" required></input>
+            <h3>Ingredients</h3>
+            <div class="dynamic-field">
+                <div>
+                    <input id="ing-name" type="text" name="dynamicField[]" placeholder="Ingredient" required value=""/><input id="ing-amount" type="text" name="dynamicField[]" placeholder="Amount" required value=""/><select id="ing-measure" name="dynamicField[]" required><option value="" disabled selected>Measure</option><option value="Gram/s">Gram/s</option><option value="Kilogram/s">Kilogram/s</option><option value="Teaspoon/s">Teaspoon/s</option><option value="Tablespoon/s">Tablespoon/s</option><option value="Pinch/es">Pinch/es</option><option value="Other">Other</option></select><a href="javascript:void(0);" class="add-button" title="Add field"><img class="ir-icon" src="images/add-icon.png"/></a>
+                </div>
+            </div>
+            <button id="ir-insert-button" name="ir-insert-button" type="submit">Save List</button>
+            <br><br>
+        </form>
+    </div> 
+    <script src="scripts.js"></script>
+</body>
+</html>
