@@ -30,7 +30,7 @@ const maxField = 25
 ## Screenshots
 <p align="center">Example grocery list for a recipe (1)</p>
 <p align="center">
-  <img width="460" height="300" src="/screenshots/df1.jpg">
+  <img width="460" height="300" src="/screenshots/df.jpg">
 </p>
 <p align="center">Example grocery list for a recipe (2)</p>
 <p align="center">
